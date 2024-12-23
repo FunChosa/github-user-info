@@ -1,0 +1,117 @@
+input[type="text"] {
+  width: 300px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #026356;
+  height: 2rem;
+  background-color: #161616;
+  color: white;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #161616;
+  color: #026356;
+  cursor: pointer;
+  height: 2rem;
+  font-weight: 600;
+  border: 1px solid #026356;
+}
+
+.githubUser {
+  max-width: 1000px;
+  /* margin: 0 auto;
+  padding: 1rem; */
+}
+
+.repoInfo {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.repoHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.repoList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+.repoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 150px;
+  background-color: #161616;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.repoCardTop {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.repoCardTop h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: #026356;
+}
+
+.repoCardBottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userInfo {
+  display: flex;
+  padding: 1rem;
+  flex-direction: row;
+  border-radius: 5px;
+  align-items: flex-start;
+  font-size: 20px;
+  color: white;
+  background-color: #161616;
+  gap: 2rem;
+}
+
+.userInfo span {
+  color: #026356;
+}
+
+.animated-image {
+  width: 200px;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .userInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
