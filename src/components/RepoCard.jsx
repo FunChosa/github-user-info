@@ -1,6 +1,6 @@
 import React from "react";
-import { formatDate } from "../helpers";
-import useGithubStore from "../store";
+import useGithubStore from "../store/store";
+import formatDate from "../helpers/formatDate";
 
 const RepoCard = ({ repo }) => {
   const { colors } = useGithubStore();

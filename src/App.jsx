@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import GitHubUser from "./components/GitHubUser";
-import useGithubStore from "./store";
+import useGithubStore from "./store/store";
 import "./App.css";
 
 function App() {
@@ -23,24 +23,8 @@ function App() {
 
   return (
     <div>
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          maxWidth: 1000,
-          margin: "0 auto",
-          padding: "1rem",
-          gap: "1rem",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            gap: "1rem",
-            flexDirection: "row",
-          }}
-        >
+      <form onSubmit={handleSubmit}>
+        <div className="searchContainer">
           <input
             type="text"
             value={username}

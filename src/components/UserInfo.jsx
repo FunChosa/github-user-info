@@ -1,6 +1,7 @@
 import React from "react";
-import useGithubStore from "../store";
-import { formatDate, differenceInDays } from "../helpers";
+import useGithubStore from "../store/store";
+import formatDate from "../helpers/formatDate";
+import differenceInDays from "../helpers/differenceInDays";
 
 const UserInfo = () => {
   const { user } = useGithubStore();

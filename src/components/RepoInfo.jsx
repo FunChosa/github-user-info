@@ -1,5 +1,5 @@
 import React from "react";
-import useGithubStore from "../store";
+import useGithubStore from "../store/store";
 import RepoCard from "./RepoCard";
 
 const RepoInfo = () => {
@@ -17,7 +17,7 @@ const RepoInfo = () => {
           ))}
         </div>
       ) : (
-        <p>No repositories found for this user :/ </p>
+        <p>User does not have any repositories :/</p>
       )}
     </div>
   );
